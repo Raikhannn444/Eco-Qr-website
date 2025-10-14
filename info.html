@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eco-QR</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+      <h1>Eco-QR</h1>
+      <nav class="navbar">
+  <div class="menu-toggle" id="mobile-menu">
+    ☰
+  </div>
+
+  <div class="nav-links" id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="map.html">Collection Points</a>
+    <a href="about.html">About Project</a>
+    <a href="info.html">Knowledge Base</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="complaints.html">Feedback Book</a>
+
+    <select id="lang-switcher">
+      <option value="info_ru.html">RU</option>
+      <option value="info.html" selected>EN</option> 
+      <option value="info_kz.html">KZ</option>
+      <option value="info_tr.html">TR</option>
+    </select>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>📚 Knowledge Base: Plastic and Recycling</h2>
+      <p class="intro-text">
+        Your contribution to the environment begins with knowledge. We have gathered the most important information to make the process of sorting and dropping off bottles as simple and meaningful as possible.
+      </p>
+
+      <section id="plastic-types" class="article-section">
+        <h3>1. Which plastic can and cannot be dropped off? (Marking) 🧴</h3>
+        <p>For the Eco-QR project, bottles marked <b>PET (1)</b> are the most important. Knowing all types helps you better understand what goes into recycling and what doesn't.</p>
+        
+        <div class="type-grid">
+          <div class="type-card good">
+            <h4>1 - PET</h4>
+            <p><strong>Water bottles, juices, sodas, vegetable oils.</strong> The most common and easily recyclable type. <b>Accepted by Eco-QR.</b></p>
+          </div>
+          <div class="type-card good">
+            <h4>2 - PEHD (HDPE)</h4>
+            <p>High-density polyethylene. <strong>Milk containers, shampoo, soap, caps.</strong> Safe and well-recycled. <b>Sometimes accepted at specialized points.</b></p>
+          </div>
+          <div class="type-card bad">
+            <h4>3 - PVC</h4>
+            <p><strong>Window/floor coverings, oilcloths.</strong> Considered hazardous, difficult to recycle (releases toxins when burned). <b>Not accepted.</b></p>
+          </div>
+          <div class="type-card good">
+            <h4>4 - LDPE</h4>
+            <p><strong>Bags, cling film, garbage bags.</strong> Low-density polyethylene. Accepted for recycling without problems.</p>
+          </div>
+          <div class="type-card mixed">
+            <h4>5 - PP</h4>
+            <p><strong>Yogurt cups, toys, disposable tableware.</strong> Heat-resistant and durable. Recycling is more difficult, accepted less frequently than PET and PEHD.</p>
+          </div>
+          <div class="type-card mixed">
+            <h4>6 - PS</h4>
+            <p><strong>Foamed plastic (styrofoam), meat trays, vegetable boxes.</strong> Contains styrene. Not accepted everywhere, best to avoid.</p>
+          </div>
+          <div class="type-card bad">
+            <h4>7 - OTHER</h4>
+            <p><strong>Mixes of plastic and other types.</strong> Usually hard containers.<b>Not recyclable.</b></p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="importance" class="article-section">
+        <h3>2. Why is it important to drop off plastic for recycling? 🌍</h3>
+        <p>Your action is not just a bonus, it is a contribution to the planet's health and the sustainability of Kazakhstan's economy.</p>
+        
+        <div class="benefit-grid">
+          <div class="benefit-item">
+            <h4>Pollution Reduction</h4>
+            <p>Plastic decomposes for <b>hundreds of years</b> and fills landfills. Recycling turns it into a valuable resource, significantly reducing the load on ecosystems.</p>
+          </div>
+          <div class="benefit-item">
+            <h4>Resource Saving</h4>
+            <p>Recycling reduces the need for primary raw materials (oil and gas), conserving natural resources and reducing energy consumption during production (up to <b>37% less</b> carbon footprint).</p>
+          </div>
+          <div class="benefit-item">
+            <h4>Economic Benefit</h4>
+            <p>Recycled plastic (secondary polyester, granules) is used to manufacture furniture, clothing, and construction materials, creating new jobs and supporting the <b>circular economy</b>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="lifecycle" class="article-section">
+        <h3>3. What happens to the bottle after you drop it off? 🔄</h3>
+        <div class="lifecycle-steps">
+            <div class="step">
+                <h4>1. Collection and Sorting</h4>
+                <p>Bottles are collected at points, delivered to factories, and sorted by plastic type (PET, PEHD) and color (colorless, green, brown). <b>Important:</b> labels and caps are separated.</p>
+            </div>
+            <div class="step">
+                <h4>2. Cleaning and Grinding</h4>
+                <p>Plastic is washed from residual contents, thoroughly cleaned, and dried. It is then shredded into small pieces called <b>PET-flex</b> (plastic flakes).</p>
+            </div>
+            <div class="step">
+                <h4>3. Granulation and Extrusion</h4>
+                <p>PET-flex is melted and passed through an extruder, forming clean, reusable granules. This is the purest <b>secondary raw material</b>.</p>
+            </div>
+            <div class="step">
+                <h4>4. Second Life</h4>
+                <p>New products are manufactured from the granules. Your old bottles can turn into:
+                    <ul>
+                        <li>New plastic bottles and containers.</li>
+                        <li>Synthetic fiber (polyester fiber for clothing, fillers, insulation).</li>
+                        <li>Furniture and construction materials.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Eco-QR. Project implemented with the support of CCI Kazakhstan.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

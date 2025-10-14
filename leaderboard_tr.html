@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eco-QR</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+      <h1>Eco-QR</h1>
+      <nav class="navbar">
+  <div class="menu-toggle" id="mobile-menu">
+    ☰
+  </div>
+
+  <div class="nav-links" id="nav-links">
+    <a href="index_tr.html">Ana Sayfa</a>
+    <a href="map_tr.html">Toplama Noktaları</a>
+    <a href="about_tr.html">Proje Hakkında</a>
+    <a href="info_tr.html">Bilgi Tabanı</a>
+    <a href="leaderboard_tr.html">Lider Tablosu</a>
+    <a href="complaints_tr.html">Geri Bildirim Kitabı</a>
+
+    <select id="lang-switcher">
+      <option value="leaderboard.html">RU</option>
+      <option value="leaderboard_en.html">EN</option>
+      <option value="leaderboard_kz.html">KZ</option>
+      <option value="leaderboard_tr.html" selected>TR</option>
+    </select>
+  </div>
+</nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>🏆 Lider Tablosu: En İyi Eko-Kahramanlar</h2>
+      <p>İlerlemenizi takip edin! Kazanılan puanlar Extra Zone'daki ödüllerle takas edilebilir.</p>
+
+      <div class="bonus-explanation">
+          <h3>💰 Nasıl Çalışır? Her şişe için 100 Bonus Kazanın!</h3>
+          <p>Teslim edilen ve doğrulanan her plastik şişe için otomatik olarak <b>100 Bonus</b> alırsınız. Bu Bonuslar hesabınızda birikir ve ortaklarımızdan gelen hediyelerin ve aboneliklerin bulunduğu özel <b>Extra Zone</b>'da harcanabilir, bunlar şunları içerir:
+              <ul>
+                  <li>Promosyon kodları ve abonelikler.</li>
+                  <li>Festivaller, konserler ve spor etkinlikleri için <b>biletler</b>.</li>
+                  <li><b>Eko-ürünler</b> ve hediyelik eşyalar.</li>
+              </ul>
+              Sıralamadaki yeriniz, bir ay içinde teslim edilen toplam şişe sayısına göre belirlenir. En iyi eko-kahraman olun!
+          </p>
+      </div>
+
+      <h3 style="margin-top: 30px; border-bottom: 2px solid #388e3c; padding-bottom: 5px;">İlk 10 Sıralaması (Aylık)</h3>
+      
+      <table class="leaderboard-table">
+          <thead>
+              <tr>
+                  <th>Sıra</th>
+                  <th>İsim</th>
+                  <th class="align-right">Şişe 🍾</th>
+                  <th class="align-right">Bonus 💰</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr class="top-rank">
+                  <td>🥇</td>
+                  <td>Azamat S.</td>
+                  <td class="align-right">512</td>
+                  <td class="align-right">51 200</td>
+              </tr>
+              <tr class="top-rank">
+                  <td>🥈</td>
+                  <td>Dinara ECO</td>
+                  <td class="align-right">488</td>
+                  <td class="align-right">48 800</td>
+              </tr>
+              <tr class="top-rank">
+                  <td>🥉</td>
+                  <td>Zhandos K.</td>
+                  <td class="align-right">395</td>
+                  <td class="align-right">39 500</td>
+              </tr>
+              <tr>
+                  <td>4</td>
+                  <td>Green Almaty</td>
+                  <td class="align-right">320</td>
+                  <td class="align-right">32 000</td>
+              </tr>
+              <tr>
+                  <td>5</td>
+                  <td>EcoMan</td>
+                  <td class="align-right">250</td>
+                  <td class="align-right">25 000</td>
+              </tr>
+              <tr>
+                  <td>6</td>
+                  <td>Kamilla</td>
+                  <td class="align-right">190</td>
+                  <td class="align-right">19 000</td>
+              </tr>
+              <tr>
+                  <td>7</td>
+                  <td>User_777</td>
+                  <td class="align-right">145</td>
+                  <td class="align-right">14 500</td>
+              </tr>
+              <tr>
+                  <td>8</td>
+                  <td>Bekzat</td>
+                  <td class="align-right">98</td>
+                  <td class="align-right">9 800</td>
+              </tr>
+              <tr>
+                  <td>9</td>
+                  <td>Nuria</td>
+                  <td class="align-right">72</td>
+                  <td class="align-right">7 200</td>
+              </tr>
+              <tr>
+                  <td>10</td>
+                  <td>PlasticYok</td>
+                  <td class="align-right">50</td>
+                  <td class="align-right">5 000</td>
+              </tr>
+              <tr class="user-rank">
+                  <td>...</td>
+                  <td><b>Siz (User123)</b></td>
+                  <td class="align-right">20</td>
+                  <td class="align-right">2 000</td>
+              </tr>
+          </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Eco-QR. Proje, CCI Kazakhstan desteğiyle uygulanmıştır.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

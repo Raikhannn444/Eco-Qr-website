@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="kz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eco-QR</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+      <h1>Eco-QR</h1>
+      <nav class="navbar">
+  <div class="menu-toggle" id="mobile-menu">
+    ☰
+  </div>
+
+  <div class="nav-links" id="nav-links">
+    <a href="index_kz.html">Басты бет</a>
+    <a href="map_kz.html">Қабылдау пункттері</a>
+    <a href="about_kz.html">Жоба туралы</a>
+    <a href="info_kz.html">Білім базасы</a>
+    <a href="leaderboard_kz.html">Көшбасшылар тақтасы</a>
+    <a href="complaints_kz.html">Шағымдар кітабы</a>
+
+    <select id="lang-switcher">
+      <option value="complaints.html">RU</option>
+      <option value="complaints_en.html">EN</option>
+      <option value="complaints_kz.html" selected>KZ</option>
+      <option value="complaints_tr.html">TR</option>
+    </select>
+  </div>
+</nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section class="feedback-hero">
+        <h2>📢 Сіздің пікіріңіз — біздің құндылығымыз!</h2>
+        <p>Егер сіз мәселеге тап болсаңыз немесе жобаны жақсарту бойынша идеяларыңыз болса, хабарламаңызды қалдырыңыз. Біз кері байланысты бағалаймыз және жақсы болуға тырысамыз!</p>
+        <div class="icon-block">
+            <span class="icon">💬</span>
+            <span class="icon">💡</span>
+            <span class="icon">🛠️</span>
+        </div>
+    </section>
+
+    <section class="card complaint-form-section">
+      <h3>📝 Хабарлама қалдыру</h3>
+      
+      <form id="complaint-form" onsubmit="handleComplaintSubmit(event)">
+        <label for="name">Сіздің атыңыз (міндетті емес)</label>
+        <input type="text" id="name" name="name" placeholder="Атыңызды немесе лақап атыңызды енгізіңіз">
+
+        <label for="email">Сіздің Email (жауап үшін)</label>
+        <input type="text" id="email" name="email" required placeholder="example@mail.kz">
+
+        <label for="message">Хабарлама мәтіні</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Мәселені сипаттаңыз, сұрақ қойыңыз немесе ұсыныс енгізіңіз..."></textarea>
+
+        <button type="submit" class="btn secondary submit-btn-cool">Хабарлама жіберу</button>
+        <p id="submission-message" class="muted hidden" style="margin-top: 15px;"></p>
+      </form>
+    </section>
+    
+    <section class="card recent-feedback">
+        <h3>✨ Соңғы ұсыныстар</h3>
+        <div class="feedback-grid">
+            <div class="feedback-item">
+                <p>"Картаға мекенжай бойынша іздеуді қосу өте жақсы болар еді!"</p>
+                <span class="feedback-tag tag-suggestion">Идея</span>
+                <span class="feedback-user">— Әсел К.</span>
+            </div>
+            <div class="feedback-item">
+                <p>"Қабылдау пунктіндегі №5 QR-сканер жиі істен шығады, тексеруді сұраймын."</p>
+                <span class="feedback-tag tag-complaint">Шағым</span>
+                <span class="feedback-user">— Бекзат 77</span>
+            </div>
+            <div class="feedback-item">
+                <p>"Өте ыңғайлы интерфейс! Пластик тапсыруға және бонустар алуға мүмкіндік бергеніңіз үшін рахмет."</p>
+                <span class="feedback-tag tag-praise">Мақтау</span>
+                <span class="feedback-user">— EcoHero</span>
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Eco-QR. CCI Kazakhstan қолдауымен жүзеге асырылған жоба.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

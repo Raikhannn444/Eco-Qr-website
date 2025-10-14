@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eco-QR — Collection Points Map</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="map-page">
+    <header class="site-header">
+    <div class="container">
+      <h1>Eco-QR</h1>
+      <nav class="navbar">
+  <div class="menu-toggle" id="mobile-menu">
+    ☰
+  </div>
+
+  <div class="nav-links" id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="map.html">Collection Points</a>
+    <a href="about.html">About Project</a>
+    <a href="info.html">Knowledge Base</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="complaints.html">Feedback Book</a>
+
+    <select id="lang-switcher">
+      <option value="map_ru.html">RU</option>
+      <option value="map.html" selected>EN</option> 
+      <option value="map_kz.html">KZ</option>
+      <option value="map_tr.html">TR</option>
+    </select>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+  <main class="map-page-main">
+    <aside class="sidebar card">
+      <h2>🗺️ Collection Points Filter</h2>
+      <p class="muted">Click on a category to see collection points of that type.</p>
+      <div id="filter-buttons" class="filter-controls">
+        </div>
+
+      <h2>📋 List of Points</h2>
+      <p class="muted">Click on a point to see its address and opening hours on the map.</p>
+      <div id="locations-list"></div>
+      
+    </aside>
+
+    <div id="map" class="map-canvas"></div>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Eco-QR. Project implemented with the support of CCI Kazakhstan.</p>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_-PttW0plI6Ki25bQypqL6OSyA2GffHo&callback=initMap"></script>
+</body>
+</html>

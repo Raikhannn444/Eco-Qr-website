@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eco-QR</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+      <h1>Eco-QR</h1>
+      <nav class="navbar">
+  <div class="menu-toggle" id="mobile-menu">
+    ☰
+  </div>
+
+  <div class="nav-links" id="nav-links">
+    <a href="index_tr.html">Ana Sayfa</a>
+    <a href="map_tr.html">Toplama Noktaları</a>
+    <a href="about_tr.html">Proje Hakkında</a>
+    <a href="info_tr.html">Bilgi Tabanı</a>
+    <a href="leaderboard_tr.html">Lider Tablosu</a>
+    <a href="complaints_tr.html">Geri Bildirim Kitabı</a>
+
+    <select id="lang-switcher">
+      <option value="complaints.html">RU</option>
+      <option value="complaints_en.html">EN</option>
+      <option value="complaints_kz.html">KZ</option>
+      <option value="complaints_tr.html" selected>TR</option>
+    </select>
+  </div>
+</nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section class="feedback-hero">
+        <h2>📢 Fikriniz bizim değerimizdir!</h2>
+        <p>Bir sorunla karşılaştıysanız veya projeyi geliştirmek için fikirleriniz varsa mesajınızı bırakın. Geri bildirime değer veriyoruz ve daha iyi olmaya çalışıyoruz!</p>
+        <div class="icon-block">
+            <span class="icon">💬</span>
+            <span class="icon">💡</span>
+            <span class="icon">🛠️</span>
+        </div>
+    </section>
+
+    <section class="card complaint-form-section">
+      <h3>📝 Mesaj Bırakın</h3>
+      
+      <form id="complaint-form" onsubmit="handleComplaintSubmit(event)">
+        <label for="name">Adınız (isteğe bağlı)</label>
+        <input type="text" id="name" name="name" placeholder="Ad veya takma ad girin">
+
+        <label for="email">E-posta Adresiniz (cevap için)</label>
+        <input type="text" id="email" name="email" required placeholder="example@mail.kz">
+
+        <label for="message">Mesaj Metni</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Sorunu açıklayın, soru sorun veya öneri yapın..."></textarea>
+
+        <button type="submit" class="btn secondary submit-btn-cool">Mesaj Gönder</button>
+        <p id="submission-message" class="muted hidden" style="margin-top: 15px;"></p>
+      </form>
+    </section>
+    
+    <section class="card recent-feedback">
+        <h3>✨ Son Öneriler</h3>
+        <div class="feedback-grid">
+            <div class="feedback-item">
+                <p>"Haritaya adrese göre arama eklemek harika olurdu!"</p>
+                <span class="feedback-tag tag-suggestion">Fikir</span>
+                <span class="feedback-user">— Asel K.</span>
+            </div>
+            <div class="feedback-item">
+                <p>"5 numaralı toplama noktasındaki QR tarayıcı sık sık bozuluyor, lütfen kontrol edin."</p>
+                <span class="feedback-tag tag-complaint">Şikayet</span>
+                <span class="feedback-user">— Bekzat 77</span>
+            </div>
+            <div class="feedback-item">
+                <p>"Çok kullanıcı dostu arayüz! Plastik teslim etme ve bonus kazanma fırsatı için teşekkürler."</p>
+                <span class="feedback-tag tag-praise">Övgü</span>
+                <span class="feedback-user">— EcoHero</span>
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Eco-QR. Proje, CCI Kazakhstan desteğiyle uygulanmıştır.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

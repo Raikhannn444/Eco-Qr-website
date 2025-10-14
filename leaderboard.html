@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eco-QR</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+      <h1>Eco-QR</h1>
+     <nav class="navbar">
+  <div class="menu-toggle" id="mobile-menu">
+    ☰
+  </div>
+
+  <div class="nav-links" id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="map.html">Collection Points</a>
+    <a href="about.html">About Project</a>
+    <a href="info.html">Knowledge Base</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="complaints.html">Feedback Book</a>
+
+    <select id="lang-switcher">
+      <option value="leaderboard_ru.html">RU</option>
+      <option value="leaderboard.html" selected>EN</option> 
+      <option value="leaderboard_kz.html">KZ</option>
+      <option value="leaderboard_tr.html">TR</option>
+    </select>
+  </div>
+</nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>🏆 Leaderboard: Top Eco-Heroes</h2>
+      <p>Track your progress! Earned points can be exchanged for prizes in the Extra Zone.</p>
+
+      <div class="bonus-explanation">
+          <h3>💰 How does it work? Get 100 Bonuses for every bottle!</h3>
+          <p>For every verified plastic bottle dropped off, you automatically receive <b>100 Bonuses</b>. These Bonuses accumulate in your account and can be spent in the special <b>Extra Zone</b>, which features gifts and subscriptions from our partners, including:
+              <ul>
+                  <li>Promo codes and subscriptions.</li>
+                  <li><b>Tickets</b> to festivals, concerts, and sporting events.</li>
+                  <li><b>Eco-goods</b> and merchandise.</li>
+              </ul>
+              Your ranking is determined by the total number of bottles dropped off in a month. Become the best eco-hero!
+          </p>
+      </div>
+
+      <h3 style="margin-top: 30px; border-bottom: 2px solid #388e3c; padding-bottom: 5px;">Top 10 Ranking (Monthly)</h3>
+      
+      <table class="leaderboard-table">
+          <thead>
+              <tr>
+                  <th>Rank</th>
+                  <th>Name</th>
+                  <th class="align-right">Bottles 🍾</th>
+                  <th class="align-right">Bonuses 💰</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr class="top-rank">
+                  <td>🥇</td>
+                  <td>Azamat S.</td>
+                  <td class="align-right">512</td>
+                  <td class="align-right">51 200</td>
+              </tr>
+              <tr class="top-rank">
+                  <td>🥈</td>
+                  <td>Dinara ECO</td>
+                  <td class="align-right">488</td>
+                  <td class="align-right">48 800</td>
+              </tr>
+              <tr class="top-rank">
+                  <td>🥉</td>
+                  <td>Zhandos K.</td>
+                  <td class="align-right">395</td>
+                  <td class="align-right">39 500</td>
+              </tr>
+              <tr>
+                  <td>4</td>
+                  <td>Green Almaty</td>
+                  <td class="align-right">320</td>
+                  <td class="align-right">32 000</td>
+              </tr>
+              <tr>
+                  <td>5</td>
+                  <td>EcoMan</td>
+                  <td class="align-right">250</td>
+                  <td class="align-right">25 000</td>
+              </tr>
+              <tr>
+                  <td>6</td>
+                  <td>Kamilla</td>
+                  <td class="align-right">190</td>
+                  <td class="align-right">19 000</td>
+              </tr>
+              <tr>
+                  <td>7</td>
+                  <td>User_777</td>
+                  <td class="align-right">145</td>
+                  <td class="align-right">14 500</td>
+              </tr>
+              <tr>
+                  <td>8</td>
+                  <td>Bekzat</td>
+                  <td class="align-right">98</td>
+                  <td class="align-right">9 800</td>
+              </tr>
+              <tr>
+                  <td>9</td>
+                  <td>Nuria</td>
+                  <td class="align-right">72</td>
+                  <td class="align-right">7 200</td>
+              </tr>
+              <tr>
+                  <td>10</td>
+                  <td>PlasticNet</td>
+                  <td class="align-right">50</td>
+                  <td class="align-right">5 000</td>
+              </tr>
+              <tr class="user-rank">
+                  <td>...</td>
+                  <td><b>You (User123)</b></td>
+                  <td class="align-right">20</td>
+                  <td class="align-right">2 000</td>
+              </tr>
+          </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Eco-QR. Project implemented with the support of CCI Kazakhstan.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

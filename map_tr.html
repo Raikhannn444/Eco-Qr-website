@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eco-QR — Toplama Noktaları Haritası</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="map-page">
+    <header class="site-header">
+    <div class="container">
+      <h1>Eco-QR</h1>
+      <nav class="navbar">
+  <div class="menu-toggle" id="mobile-menu">
+    ☰
+  </div>
+
+  <div class="nav-links" id="nav-links">
+    <a href="index_tr.html">Ana Sayfa</a>
+    <a href="map_tr.html">Toplama Noktaları</a>
+    <a href="about_tr.html">Proje Hakkında</a>
+    <a href="info_tr.html">Bilgi Tabanı</a>
+    <a href="leaderboard_tr.html">Lider Tablosu</a>
+    <a href="complaints_tr.html">Geri Bildirim Kitabı</a>
+
+    <select id="lang-switcher">
+      <option value="map.html">RU</option>
+      <option value="map_en.html">EN</option>
+      <option value="map_kz.html">KZ</option>
+      <option value="map_tr.html" selected>TR</option>
+    </select>
+  </div>
+</nav>
+    </div>
+  </header>
+
+  <main class="map-page-main">
+    <aside class="sidebar card">
+      <h2>🗺️ Toplama Noktaları Filtresi</h2>
+      <p class="muted">Bu türdeki toplama noktalarını görmek için bir kategoriye tıklayın.</p>
+      <div id="filter-buttons" class="filter-controls">
+        </div>
+
+      <h2>📋 Noktaların Listesi</h2>
+      <p class="muted">Haritadaki adresini ve çalışma saatlerini görmek için bir noktaya tıklayın.</p>
+      <div id="locations-list"></div>
+      
+    </aside>
+
+    <div id="map" class="map-canvas"></div>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Eco-QR. Proje, CCI Kazakhstan desteğiyle uygulanmıştır.</p>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_-PttW0plI6Ki25bQypqL6OSyA2GffHo&callback=initMap"></script>
+</body>
+</html>

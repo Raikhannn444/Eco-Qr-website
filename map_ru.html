@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eco-QR — Карта пунктов приема</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="map-page">
+    <header class="site-header">
+    <div class="container">
+      <h1>Eco-QR</h1>
+      <nav class="navbar">
+  <div class="menu-toggle" id="mobile-menu">
+    ☰
+  </div>
+
+  <div class="nav-links" id="nav-links">
+    <a href="index_ru.html">Главная</a>
+    <a href="map_ru.html">Пункты приема</a>
+    <a href="about_ru.html">О Проекте</a>
+    <a href="info_ru.html">База знаний</a>
+    <a href="leaderboard_ru.html">Лидерборд</a>
+    <a href="complaints_ru.html">Книга жалоб</a>
+
+    <select id="lang-switcher">
+      <option value="map_ru.html" selected>RU</option>
+      <option value="map.html">EN</option> 
+      <option value="map_kz.html">KZ</option>
+      <option value="map_tr.html">TR</option>
+    </select>
+  </div>
+</nav>
+    </div>
+  </header>
+
+  <main class="map-page-main">
+    <aside class="sidebar card">
+      <h2>🗺️ Фильтр пунктов приема</h2>
+      <p class="muted">Нажмите на категорию, чтобы увидеть точки приема этого типа.</p>
+      <div id="filter-buttons" class="filter-controls">
+        </div>
+
+      <h2>📋 Список пунктов</h2>
+      <p class="muted">Нажмите на пункт, чтобы увидеть его на карте, а также адрес и график работы.</p>
+      <div id="locations-list"></div>
+      
+    </aside>
+
+    <div id="map" class="map-canvas"></div>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Eco-QR. Проект реализован при поддержке CCI Kazakhstan.</p>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_-PttW0plI6Ki25bQypqL6OSyA2GffHo&callback=initMap"></script>
+</body>
+</html>

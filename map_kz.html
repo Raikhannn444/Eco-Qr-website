@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="kz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eco-QR — Қабылдау пункттерінің картасы</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="map-page">
+    <header class="site-header">
+    <div class="container">
+      <h1>Eco-QR</h1>
+      <nav class="navbar">
+  <div class="menu-toggle" id="mobile-menu">
+    ☰
+  </div>
+
+  <div class="nav-links" id="nav-links">
+    <a href="index_kz.html">Басты бет</a>
+    <a href="map_kz.html">Қабылдау пункттері</a>
+    <a href="about_kz.html">Жоба туралы</a>
+    <a href="info_kz.html">Білім базасы</a>
+    <a href="leaderboard_kz.html">Көшбасшылар тақтасы</a>
+    <a href="complaints_kz.html">Шағымдар кітабы</a>
+
+    <select id="lang-switcher">
+      <option value="map.html">RU</option>
+      <option value="map_en.html">EN</option>
+      <option value="map_kz.html" selected>KZ</option>
+      <option value="map_tr.html">TR</option>
+    </select>
+  </div>
+</nav>
+    </div>
+  </header>
+
+  <main class="map-page-main">
+    <aside class="sidebar card">
+      <h2>🗺️ Қабылдау пункттерінің сүзгісі</h2>
+      <p class="muted">Осы түрдегі қабылдау нүктелерін көру үшін санатты басыңыз.</p>
+      <div id="filter-buttons" class="filter-controls">
+        </div>
+
+      <h2>📋 Пункттер тізімі</h2>
+      <p class="muted">Оның картадағы мекенжайы мен жұмыс кестесін көру үшін пунктті басыңыз.</p>
+      <div id="locations-list"></div>
+      
+    </aside>
+
+    <div id="map" class="map-canvas"></div>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Eco-QR. CCI Kazakhstan қолдауымен жүзеге асырылған жоба.</p>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_-PttW0plI6Ki25bQypqL6OSyA2GffHo&callback=initMap"></script>
+</body>
+</html>

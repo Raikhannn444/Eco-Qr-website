@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eco-QR</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="index-page">
+  <header class="site-header">
+    <div class="container">
+      <h1>Eco-QR</h1>
+      <nav class="navbar">
+  <div class="menu-toggle" id="mobile-menu">
+    ☰
+  </div>
+
+  <div class="nav-links" id="nav-links">
+    <a href="index_tr.html">Ana Sayfa</a>
+    <a href="map_tr.html">Toplama Noktaları</a>
+    <a href="about_tr.html">Proje Hakkında</a>
+    <a href="info_tr.html">Bilgi Tabanı</a>
+    <a href="leaderboard_tr.html">Lider Tablosu</a>
+    <a href="complaints_tr.html">Geri Bildirim Kitabı</a>
+
+    <select id="lang-switcher">
+      <option value="index.html">RU</option>
+      <option value="index_en.html">EN</option>
+      <option value="index_kz.html">KZ</option>
+      <option value="index_tr.html" selected>TR</option>
+    </select>
+  </div>
+</nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>♻ Eco-QR: Şişeleri Teslim Edin, Bonusları Kapın!</h2>
+      <p>Basit sistem: Toplama noktasındaki <b>QR kodu tarayın</b>, <b>fotoğrafla onaylayın</b> ve Coca-Cola'dan <b>Extra Zone</b>'da ödüllerle takas edebileceğiniz puanları kazanın.</p>
+      
+      <section class="map-section" style="margin-top: 20px;">
+        <h3>En Yakın Şişe Toplama Noktasını (PET) Bulun</h3>
+        <p class="muted">Konumunuz, otomatik olarak en yakın <b>sadece şişe</b> toplama noktasını bulmak ve bir rota oluşturmak için kullanılacaktır.</p>
+        <div id="map" style="width: 100%; height: 500px; border-radius: 12px; margin-top: 10px;"></div>
+        <button class="btn green" onclick="findNearest()">En yakın noktayı ve rotayı bul</button>
+      </section>
+      
+      <button class="btn secondary" id="open-scan" onclick="openScanner()">Şişe Teslim Et (QR)</button>
+    </section>
+<section id="qr-scanner-section" class="hidden card" style="margin-top: 20px;">
+  <h2>QR Kod Tarayıcı</h2>
+
+  <div id="qr-demo" class="demo">
+    <p id="fake-text">Tarama devam ediyor...</p>
+
+    <div class="progress-bar">
+      <div id="demo-progress" style="height:10px; background:var(--green,#4caf50); width:0%; border-radius:6px;"></div>
+    </div>
+
+    <input id="demo-code-input" type="text" placeholder="Kod girin (isteğe bağlı)" style="margin-top:10px;" />
+
+    <div class="demo-buttons" style="margin-top:10px; display:flex; gap:10px;">
+      <button id="start-demo-btn" class="btn">Demo Taramayı Başlat</button>
+      <button id="cancel-demo-btn" class="btn secondary">İptal</button>
+    </div>
+
+    <p id="demo-result" style="display:none; margin-top:10px;"></p>
+  </div>
+
+  <p id="scan-result" class="muted"></p>
+
+  <section id="photo-upload-section" class="card hidden" style="margin-top:12px;">
+    <h3>Adım 2: Şişe Teslimatının Fotoğrafını Onaylayın</h3>
+    <p class="muted">Koleksiyon kabının yanındaki fotoğrafı yükleyin — bu doğrulama için gereklidir.</p>
+
+    <label for="photo-upload">Fotoğraf Yükle</label>
+    <input id="photo-upload" type="file" accept="image/*" onchange="previewImage(event)">
+
+    <img id="photo-preview" class="preview hidden" src="" alt="Preview"
+         style="max-height:240px; display:none; margin-top:10px; border-radius:8px;">
+
+    <p id="submission-msg" class="muted" style="margin-top:8px;"></p>
+
+    <div style="margin-top:12px; display:flex; gap:10px;">
+      <button class="btn" onclick="confirmSubmission()">Teslimatı Onayla</button>
+      <button class="btn secondary" onclick="(function(){
+        document.getElementById('photo-upload').value='';
+        document.getElementById('photo-preview').src='';
+        document.getElementById('photo-preview').classList.add('hidden');
+      })()">İptal Et</button>
+    </div>
+  </section>
+</section>
+    
+
+    <section class="card explore-more">
+      <h2>Sırada Ne Var? Daha Fazlasını Öğrenin!</h2>
+      <div class="explore-grid">
+        <div class="explore-item green">
+          <h3>Proje ve geri dönüşüm hakkında ♻️</h3>
+          <p>Eco-QR misyonu, plastiği nasıl doğru ayıracağınızı ve katkınızın Kazakistan doğasını nasıl kurtardığını öğrenin.</p>
+          <a href="info_tr.html" class="btn">Bilgiye Git</a>
+        </div>
+        <div class="explore-item red">
+          <h3>Lider tablosu ve bonuslar 🏆</h3>
+          <p>İlerlemenizi takip edin, Extra Zone'daki ödüller için puanları takas edin ve diğer katılımcılarla yarışın!</p>
+          <a href="leaderboard_tr.html" class="btn secondary">Lider Tablosunu Aç</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Eco-QR. Proje, CCI Kazakhstan desteğiyle uygulanmıştır.</p>
+    </div>
+  </footer>
+  
+ 
+<script src="script.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_-PttW0plI6Ki25bQypqL6OSyA2GffHo&libraries=geometry&callback=initMap"></script>
+
+
+</body>
+</html>

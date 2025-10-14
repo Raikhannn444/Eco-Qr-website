@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eco-QR</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+      <h1>Eco-QR</h1>
+      <nav class="navbar">
+  <div class="menu-toggle" id="mobile-menu">
+    ☰
+  </div>
+
+  <div class="nav-links" id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="map.html">Collection Points</a>
+    <a href="about.html">About Project</a>
+    <a href="info.html">Knowledge Base</a>
+    <a href="leaderboard.html">Leaderboard</a>
+    <a href="complaints.html">Feedback Book</a>
+
+    <select id="lang-switcher">
+      <option value="complaints_ru.html">RU</option>
+      <option value="complaints.html" selected>EN</option> 
+      <option value="complaints_kz.html">KZ</option>
+      <option value="complaints_tr.html">TR</option>
+    </select>
+  </div>
+</nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section class="feedback-hero">
+        <h2>📢 Your Opinion is Our Value!</h2>
+        <p>Leave your message if you have encountered a problem or have ideas for improving the project. We value feedback and strive to get better!</p>
+        <div class="icon-block">
+            <span class="icon">💬</span>
+            <span class="icon">💡</span>
+            <span class="icon">🛠️</span>
+        </div>
+    </section>
+
+    <section class="card complaint-form-section">
+      <h3>📝 Leave a Message</h3>
+      
+      <form id="complaint-form" onsubmit="handleComplaintSubmit(event)">
+        <label for="name">Your Name (optional)</label>
+        <input type="text" id="name" name="name" placeholder="Enter name or nickname">
+
+        <label for="email">Your Email (for response)</label>
+        <input type="text" id="email" name="email" required placeholder="example@mail.kz">
+
+        <label for="message">Message Text</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Describe the problem, ask a question, or make a suggestion..."></textarea>
+
+        <button type="submit" class="btn secondary submit-btn-cool">Send Message</button>
+        <p id="submission-message" class="muted hidden" style="margin-top: 15px;"></p>
+      </form>
+    </section>
+    
+    <section class="card recent-feedback">
+        <h3>✨ Latest Suggestions</h3>
+        <div class="feedback-grid">
+            <div class="feedback-item">
+                <p>"It would be great to add searching by address on the map!"</p>
+                <span class="feedback-tag tag-suggestion">Idea</span>
+                <span class="feedback-user">— Asel K.</span>
+            </div>
+            <div class="feedback-item">
+                <p>"The QR scanner at collection point #5 is often out of order, please check."</p>
+                <span class="feedback-tag tag-complaint">Complaint</span>
+                <span class="feedback-user">— Bekzat 77</span>
+            </div>
+            <div class="feedback-item">
+                <p>"Very user-friendly interface! Thank you for the opportunity to drop off plastic and receive bonuses."</p>
+                <span class="feedback-tag tag-praise">Praise</span>
+                <span class="feedback-user">— EcoHero</span>
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Eco-QR. Project implemented with the support of CCI Kazakhstan.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
